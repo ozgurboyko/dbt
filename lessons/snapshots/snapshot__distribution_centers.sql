@@ -9,6 +9,6 @@
     )
 }}
 
-SELECT * FROM {{ source('thelook_ecommerce', 'seed_distribution_centers') }}
+SELECT * FROM {{ source('thelook_ecommerce', 'distribution_centers') }}
 
 {% endsnapshot %}
