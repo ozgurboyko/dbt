@@ -30,6 +30,9 @@ SELECT
 	om.total_product_cost,
 	om.total_profit,
 	om.total_discount,
+	total_sold_menswear,
+	total_sold_womenswear,
+
 
 	{% for department in departments %}
 	total_sold_{{ department.lower() }}swear{{ "," if not loop.last }}
